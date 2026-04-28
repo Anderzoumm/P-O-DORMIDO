@@ -4,7 +4,7 @@ import java.util.stream.Collectors;
 
 public class DoacaoComida {
 
-
+    /* vaivasco */
     private static int id;
     private String descricaoDoacao;
     private String statusDoacao;
@@ -37,7 +37,6 @@ public class DoacaoComida {
                 .collect(Collectors.toList());
 
     }
-
 
 
 
