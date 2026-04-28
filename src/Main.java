@@ -13,7 +13,7 @@ public class Main{
 
         List<DoacaoComida> filtroCentro = DoacaoComida.filtrarPorRegiao(todasDoacoes, "centro");
 
-        //coitada do marcos testge - setar github
+        //coitada do marcos teste - setar github
 
 
     }
