@@ -13,7 +13,7 @@ public class Main{
 
         List<DoacaoComida> filtroCentro = DoacaoComida.filtrarPorRegiao(todasDoacoes, "centro");
 
-        //foi? mds vai logo man bah
+        //vai anderson envia esse negocio logo
 
 
     }
