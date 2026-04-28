@@ -13,7 +13,11 @@ public class Main{
 
         List<DoacaoComida> filtroCentro = DoacaoComida.filtrarPorRegiao(todasDoacoes, "centro");
 
+<<<<<<< HEAD
         //foi? mds vai logo man bah
+=======
+        System.out.println();
+>>>>>>> 8d6401c (Vai vasco)
 
 
     }
