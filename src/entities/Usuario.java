@@ -5,8 +5,14 @@ import java.util.UUID;
 
 public class Usuario {
     private String Name,email,phone;
-    private UUID id;
     private String senha;
+
+    public Usuario(String name, String email, String phone, String senha) {
+        Name = name;
+        this.email = email;
+        this.phone = phone;
+        this.senha = senha;
+    }
 
     public String getName() {
         return Name;
@@ -40,20 +46,16 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public UUID getId() {
-        return id;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Usuario usuario = (Usuario) o;
-        return Objects.equals(id, usuario.id);
+        return Objects.equals(email, usuario.email);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(id);
+        return Objects.hashCode(email);
     }
 
     @Override
@@ -62,7 +64,6 @@ public class Usuario {
                 "Name='" + Name + '\'' +
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
-                ", id=" + id +
                 '}';
     }
 
@@ -72,5 +73,5 @@ public class Usuario {
         setPhone(phone);
     }
 
-    public void Login(String Info,String Senha){};
+    public void Login(String email,String Senha){};
 }
